@@ -32,14 +32,11 @@ Usage (Production)
   for the server run-time, and [Google Chrome](https://www.google.com/chrome)
   for the client run-time.
 
-- Install all dependencies:<br/>
-  `npm install --production`
+- Install application:<br/>
+  `npm install pptx-prompter`
 
-- Run the production build-process once:<br/>
-  `npm start build`
-
-- Run the bare prompter server component:<br/>
-  `npm start server`
+- Run the prompter server component:<br/>
+  `pptx-prompter [...]`
 
 - Open the prompter client in Google Chrome:<br/>
   https://127.0.0.1:12345/
@@ -52,6 +49,9 @@ Usage (Development)
   for the client run-time,
   plus [Visual Studio Code](https://code.visualstudio.com/) with its
   TypeScript, ESLint and VueJS extensions.
+
+- Clone the source code:<br/>
+  `git clone https://github.com/rse/pptx-prompter`
 
 - Install all dependencies:<br/>
   `npm install`
