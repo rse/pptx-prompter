@@ -13,9 +13,12 @@ PPTX-Prompter
 About
 -----
 
-**PPTX-Prompter** is a client/server applications for showing a
-prompter view for PowerPoint presentations, based on
-embedded, hidden, even numbered, exported slides.
+**PPTX-Prompter** is a clientserver applications for showing a
+prompter view for Microsoft PowerPoint &reg; presentations, based on
+embedded, hidden, even numbered, pre-exported slides. It is intended as
+a replacement for the standard presenter view in Microsoft PowerPoint &reg; presentations,
+which has two main drawbacks: it does not provide *reasonable* text formatting and
+it does not provide an *analog* clock showing the remaining time.
 
 The application, written in
 [TypeScript](https://www.typescriptlang.org/), consists of a central
