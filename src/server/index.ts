@@ -1,4 +1,5 @@
-/*
+#!/usr/bin/env node
+/*!
 **  pptx-prompter - Prompter for PowerPoint
 **  Copyright (c) 2023 Dr. Ralf S. Engelschall <rse@engelschall.com>
 **  Licensed under GPL 3.0 <https://spdx.org/licenses/GPL-3.0-only>
