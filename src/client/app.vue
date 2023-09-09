@@ -8,11 +8,11 @@
 
 <template>
     <div class="app">
-        <div v-if="!online" class="hint error">
+        <div v-if="!online && !starting" class="hint error">
             Error: Connection to WebSocket service dropped.<br/>
             Attempting to reconnect...
         </div>
-        <div v-if="online && state.state !== 'viewing'" class="hint notice">
+        <div v-if="online && !starting && state.state !== 'viewing'" class="hint notice">
             Hint: <i><b>Microsoft PowerPoint</b></i> &reg; is<br/>
             still not in <b>Slideshow</b> viewing mode.<br/>
             Please start <b>Slideshow</b> first!
@@ -180,6 +180,7 @@ export default defineComponent({
     data: () => ({
         rsURL:      "",
         wsURL:      "",
+        starting:   true,
         online:     false,
         state:      StateDefault as StateType
     }),
@@ -240,6 +241,11 @@ export default defineComponent({
             }
         })
         this.log("INFO", "established user interface")
+
+        /*  after some time we are no longer starting  */
+        setTimeout(() => {
+            this.starting = false
+        }, 1000)
     },
     methods: {
         log (level: string, msg: string) {
