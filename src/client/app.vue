@@ -8,8 +8,12 @@
 
 <template>
     <div class="app">
-        <div v-if="online && state.state !== 'viewing'" class="hint">
-            <i><b>Microsoft PowerPoint</b></i> &reg; is<br/>
+        <div v-if="!online" class="hint error">
+            Error: Connection to WebSocket service dropped.<br/>
+            Attempting to reconnect...
+        </div>
+        <div v-if="online && state.state !== 'viewing'" class="hint notice">
+            Hint: <i><b>Microsoft PowerPoint</b></i> &reg; is<br/>
             still not in <b>Slideshow</b> viewing mode.<br/>
             Please start <b>Slideshow</b> first!
         </div>
@@ -51,6 +55,13 @@
     justify-content: center
     align-items: center
     .hint
+        text-align: center
+        font-size: 3vw
+        &.notice
+            color: var(--color-acc-fg-3)
+        &.error
+            color: var(--color-sig-fg-3)
+    .offline
         text-align: center
         font-size: 3vw
         color: var(--color-sig-fg-3)
