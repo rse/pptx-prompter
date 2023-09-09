@@ -36,11 +36,8 @@ Usage (Production)
   for the server run-time, and [Google Chrome](https://www.google.com/chrome)
   for the client run-time.
 
-- Install application:<br/>
-  `npm install pptx-prompter`
-
 - Run the prompter server component:<br/>
-  `pptx-prompter [...]`
+  `npx pptx-prompter [...]`
 
 - Open the prompter client in Google Chrome:<br/>
   https://127.0.0.1:12345/
