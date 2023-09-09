@@ -14,7 +14,7 @@ About
 -----
 
 **PPTX-Prompter** is a client/server applications for showing a
-prompter view for Microsoft PowerPoint &reg; presentations, based on
+prompter view for Microsoft PowerPoint &reg; presentations (under Windows or macOS), based on
 embedded, hidden, even numbered, pre-exported slides. It is intended as
 a replacement for the standard presenter view in Microsoft PowerPoint &reg; presentations,
 which has two main drawbacks: it does not provide *reasonable* text formatting and
@@ -28,9 +28,9 @@ Single-Page Application (SPA) as the client component.
 Usage (Production)
 ------------------
 
-- Under Windows/macOS/Linux install [Node.js](https://nodejs.org)
-  for the server run-time, [Google Chrome](https://www.google.com/chrome)
-  for the client run-time, and [vMix](https://www.vmix.com) for the target application.
+- Under Windows/macOS install [Node.js](https://nodejs.org)
+  for the server run-time, and [Google Chrome](https://www.google.com/chrome)
+  for the client run-time.
 
 - Install all dependencies:<br/>
   `npm install --production`
@@ -47,7 +47,7 @@ Usage (Production)
 Usage (Development)
 -------------------
 
-- Under Windows/macOS/Linux install [Node.js](https://nodejs.org)
+- Under Windows/macOS install [Node.js](https://nodejs.org)
   for the server run-time and [Google Chrome](https://www.google.com/chrome)
   for the client run-time,
   plus [Visual Studio Code](https://code.visualstudio.com/) with its
