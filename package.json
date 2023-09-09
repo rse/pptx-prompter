@@ -1,7 +1,7 @@
 {
     "name":            "pptx-prompter",
-    "version":         "0.9.2",
-    "stdver":          "0.9.2-EA",
+    "version":         "0.9.3",
+    "stdver":          "0.9.3-EA",
     "x-date":          "2023-09-10",
     "homepage":        "https://github.com/rse/pptx-prompter",
     "description":     "Prompter for PowerPoint",
