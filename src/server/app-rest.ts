@@ -146,7 +146,7 @@ export default class REST {
             path: "/clock/{param*}",
             handler: {
                 directory: {
-                    path: path.join(__dirname, "../../clock"),
+                    path: path.join(__dirname, "../../node_modules/@rse/analogclock/dist"),
                     redirectToSlash: true,
                     index: true
                 }
