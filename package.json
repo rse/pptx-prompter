@@ -13,7 +13,7 @@
     "license":         "GPL-3.0-only",
     "repository": {
         "type":        "git",
-        "url":         "git+https://github.com/rse/pptx-prompter"
+        "url":         "git+https://github.com/rse/pptx-prompter.git"
     },
     "browser":         "src/client/index.html",
     "main":            "src/client/index.html",
