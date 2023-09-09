@@ -95,6 +95,7 @@
         "!chalk"
     ],
     "scripts": {
-        "start": "nps -c etc/nps.yaml"
+        "start":   "nps -c etc/nps.yaml",
+        "install": "npm start build"
     }
 }
