@@ -17,7 +17,7 @@
     },
     "browser":         "src/client/index.html",
     "main":            "src/client/index.html",
-    "bin":             { "pptx-prompter": "dst/server/js.html" },
+    "bin":             { "pptx-prompter": "dst/server/index.js" },
     "dependencies": {
         "vue":                              "3.3.4",
         "typopro-web":                      "4.2.6",
