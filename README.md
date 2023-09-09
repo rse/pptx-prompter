@@ -13,7 +13,7 @@ PPTX-Prompter
 About
 -----
 
-**PPTX-Prompter** is a clientserver applications for showing a
+**PPTX-Prompter** is a client/server applications for showing a
 prompter view for Microsoft PowerPoint &reg; presentations, based on
 embedded, hidden, even numbered, pre-exported slides. It is intended as
 a replacement for the standard presenter view in Microsoft PowerPoint &reg; presentations,
