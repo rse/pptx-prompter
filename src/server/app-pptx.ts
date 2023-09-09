@@ -87,7 +87,7 @@ export default class PPTX extends EventEmitter {
                 }
             }
         }
-        this.timer = setTimeout(poller, 600)
+        this.timer = setTimeout(poller, 500)
     }
 
     /*  shutdown instance  */
