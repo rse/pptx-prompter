@@ -23,8 +23,9 @@ scripts:
     lint-htmllint:          htmllint --rc etc/htmllint.json src/**/*.html
 
     #   code compilation/transpiling (building)
-    build:                  npm start build-client build-server
+    build:                  npm start build-clock build-client build-server
     build-dev:              npm start build-client-dev build-server-dev
+    build-clock:            cd clock && npm install
     build-client: >
                             cross-env NODE_OPTIONS=--max-old-space-size=8192
                             vite --config etc/vite-client.ts build --logLevel info --mode production
