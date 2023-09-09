@@ -156,7 +156,8 @@ import moment              from "moment"
 import {
     StateType,
     StateSchema,
-    StateDefault
+    StateDefault,
+    StateUtil
 }                          from "../common/app-state"
 </script>
 
@@ -239,33 +240,11 @@ export default defineComponent({
         },
         setState (state: StateType) {
             this.log("DEBUG", "received state: " + JSON.stringify(state))
-            let changed = 0
-            if (this.state.state !== state.state) {
-                this.state.state = state.state
-                changed++
+            const changes = StateUtil.changed(this.state, state)
+            if (changes.length > 0) {
+                this.log("INFO", `state changed (${changes.length} update${changes.length > 1 ? "s" : ""})`)
+                StateUtil.copy(this.state, state)
             }
-            if (this.state.notes !== state.notes) {
-                this.state.notes = state.notes
-                changed++
-            }
-            if (this.state.number !== state.number) {
-                this.state.number = state.number
-                changed++
-            }
-            if (this.state.preview !== state.preview) {
-                this.state.preview = state.preview
-                changed++
-            }
-            if (this.state.previewNext !== state.previewNext) {
-                this.state.previewNext = state.previewNext
-                changed++
-            }
-            if (this.state.clock !== state.clock) {
-                this.state.clock = state.clock
-                changed++
-            }
-            if (changed > 0)
-                this.log("INFO", `state changed (${changed} update${changed > 1 ? "s" : ""})`)
         }
     }
 })
