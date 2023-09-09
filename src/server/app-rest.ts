@@ -19,6 +19,7 @@ import HAPITraffic    from "hapi-plugin-traffic"
 import HAPIDucky      from "hapi-plugin-ducky"
 import ducky          from "ducky"
 import WebSocket      from "ws"
+import resolve        from "resolve-pkg"
 
 /*  application requirement  */
 import Pkg            from "./app-pkg"
@@ -146,7 +147,7 @@ export default class REST {
             path: "/clock/{param*}",
             handler: {
                 directory: {
-                    path: path.join(__dirname, "../../node_modules/@rse/analogclock/dist"),
+                    path: resolve("@rse/analogclock/dist")!,
                     redirectToSlash: true,
                     index: true
                 }
