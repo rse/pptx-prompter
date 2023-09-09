@@ -31,10 +31,10 @@ Usage (Production)
 - Run the production build-process once:<br/>
   `npm start build`
 
-- Run the bare server component:<br/>
+- Run the bare prompter server component:<br/>
   `npm start server`
 
-- Open the control client in Google Chrome:<br/>
+- Open the prompter client in Google Chrome:<br/>
   https://127.0.0.1:12345/
 
 Usage (Development)
@@ -52,10 +52,10 @@ Usage (Development)
 - Run the development build-process once:<br/>
   `npm start build-dev`
 
-- Run the development build-process and server component continuously:<br/>
+- Run the development build-process and prompter server component continuously:<br/>
   `npm start dev`
 
-- Open the control client in Google Chrome:<br/>
+- Open the prompter client in Google Chrome:<br/>
   https://127.0.0.1:12345/
 
 See Also
@@ -64,6 +64,8 @@ See Also
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vue.js](https://vuejs.org/)
 - [Node.js](https://nodejs.org)
+- [Slideshow](https://npmjs.com/slideshow)
+- [PowerPoint](https://www.microsoft.com/en/microsoft-365/powerpoint)
 
 Copyright & License
 -------------------
