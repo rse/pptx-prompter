@@ -9,6 +9,10 @@ PPTX-Prompter
 [![github (author stars)](https://img.shields.io/github/stars/rse?logo=github&label=author%20stars&color=%233377aa)](https://github.com/rse)
 [![github (author followers)](https://img.shields.io/github/followers/rse?label=author%20followers&logo=github&color=%234477aa)](https://github.com/rse)
 [![github (project stdver)](https://img.shields.io/github/package-json/stdver/rse/pptx-prompter?logo=github&label=project%20stdver&color=%234477aa&cacheSeconds=900)](https://github.com/rse/pptx-prompter)
+<br/>
+[![npm (project license)](https://img.shields.io/npm/l/pptx-prompter?logo=npm&label=npm%20license&color=%23cc3333)](https://npmjs.com/pptx-prompter)
+[![npm (project release)](https://img.shields.io/npm/v/pptx-prompter?logo=npm&label=npm%20release&color=%23cc3333)](https://npmjs.com/pptx-prompter)
+[![npm (project downloads)](https://img.shields.io/npm/dm/pptx-prompter?logo=npm&label=npm%20downloads&color=%23cc3333)](https://npmjs.com/pptx-prompter)
 
 About
 -----
