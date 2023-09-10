@@ -20,24 +20,28 @@ About
 **PPTX-Prompter** is a client/server applications for showing a
 prompter view for Microsoft PowerPoint &reg; presentations (under Windows or macOS), based on
 embedded, hidden, even numbered, pre-exported slides. It is intended as
-a replacement for the standard slideshow view in Microsoft PowerPoint &reg; presentations
+a replacement (or companion) for the standard slideshow view of Microsoft PowerPoint &reg;
 and provides two killer features:
 
-1. It allows a *reasonable* text formatting of the prompter content,
-   including arbitrary graphcial elements. Whatever you can put onto
+1. **Arbitrary Formatting**: It allows a *reasonable* text formatting of the prompter
+   content, including arbitrary graphical elements. Whatever you can put onto
    a PowerPoint slide can be used as the individual prompter content.
-   You are no longer constrained by the limited text rendering possibilities
-   of the standard slideshow view.
+   You are no longer constrained by the extremely limited text rendering
+   possibilities of the standard slideshow view.
 
-2. It provides a nice *analog* clock showing the done and remaining speaking time.
-   The analog type of the clock is essential as it optically does not stress the speaker
+2. **Analog Clock**: It provides a nice *analog* clock, showing the done and remaining speaking time.
+   The analog type of the clock is key, as it optically does not stress the speaker
    as much as a counting digital clock, does not require the speaker to perform any math
-   calculations during his adrenalin spikes, and especially allows the speaker
-   to get the current status with just a glance.
+   calculations during his adrenalin spiced performance, and especially allows the speaker
+   to get the current timing status with just a quick glance.
 
 The application, written in [TypeScript](https://www.typescriptlang.org/), consists of
 a central [Node.js](https://nodejs.org)-based server component and a HTML5
-Single-Page Application (SPA) as the client component.
+Single-Page Application (SPA) as the client component. The prompter view
+can be opened in a fullscreen browser like [Google Chrome](https://www.google.com/chrome) or in
+a browser source of [OBS Studio](https://obsproject.com). In the latter case, one usually also
+projects the beamer content in realtime onto the left top corner of the prompter view with the
+help of [NDI Tools](https://ndi.video/tools/) to get an even better user experience.
 
 Overview
 --------
