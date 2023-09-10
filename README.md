@@ -18,9 +18,10 @@ About
 -----
 
 **PPTX-Prompter** is a client/server applications for showing a
-prompter view for Microsoft PowerPoint &reg; presentations (under Windows or macOS), based on
+prompter view for [Microsoft PowerPoint](https://www.microsoft.com/en/microsoft-365/powerpoint) &reg;
+presentations (under Windows or macOS), based on
 embedded, hidden, even numbered, pre-exported slides. It is intended as
-a replacement (or companion) for the standard slideshow view of Microsoft PowerPoint &reg;
+a replacement (or companion) for the standard slideshow view of PowerPoint
 and provides two killer features:
 
 1. **Arbitrary Formatting**: It allows a *reasonable* text formatting of the prompter
@@ -111,6 +112,8 @@ See Also
 - [Node.js](https://nodejs.org)
 - [Slideshow](https://npmjs.com/slideshow)
 - [PowerPoint](https://www.microsoft.com/en/microsoft-365/powerpoint)
+- [OBS Studio](https://obsproject.com)
+- [NDI Tools](https://ndi.video/tools/)
 
 Copyright & License
 -------------------
