@@ -32,6 +32,12 @@ Single-Page Application (SPA) as the client component.
 Overview
 --------
 
+The following is a screenshot of a prompter view:
+
+![screenshot](doc/screenshot.png)
+
+Here is the corresponding setup overview:
+
 ![overview](doc/overview.png)
 
 Usage (Production)
