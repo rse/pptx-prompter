@@ -29,6 +29,11 @@ The application, written in
 [Node.js](https://nodejs.org)-based server component and a HTML5
 Single-Page Application (SPA) as the client component.
 
+Overview
+--------
+
+![overview](doc/overview.png)
+
 Usage (Production)
 ------------------
 
