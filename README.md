@@ -30,7 +30,8 @@ and provides two killer features:
    You are no longer constrained by the extremely limited text rendering
    possibilities of the standard slideshow view.
 
-2. **Analog Clock**: It provides a nice *analog* clock, showing the done and remaining speaking time.
+2. **Analog Clock**: It provides a nice [*Analog Clock*](https://github.com/rse/analogclock), 
+   showing the done and remaining speaking time.
    The analog type of the clock is key, as it optically does not stress the speaker
    as much as a counting digital clock, does not require the speaker to perform any math
    calculations during his adrenalin spiced performance, and especially allows the speaker
@@ -142,6 +143,7 @@ See Also
 - [Vue.js](https://vuejs.org/)
 - [Node.js](https://nodejs.org)
 - [Slideshow](https://npmjs.com/slideshow)
+- [Analog Clock](https://github.com/rse/analogclock)
 - [PowerPoint](https://www.microsoft.com/en/microsoft-365/powerpoint)
 - [OBS Studio](https://obsproject.com)
 - [NDI Tools](https://ndi.video/tools/)
