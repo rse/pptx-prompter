@@ -20,13 +20,23 @@ About
 **PPTX-Prompter** is a client/server applications for showing a
 prompter view for Microsoft PowerPoint &reg; presentations (under Windows or macOS), based on
 embedded, hidden, even numbered, pre-exported slides. It is intended as
-a replacement for the standard presenter view in Microsoft PowerPoint &reg; presentations,
-which has two main drawbacks: it does not provide *reasonable* text formatting and
-it does not provide an *analog* clock showing the remaining time.
+a replacement for the standard slideshow view in Microsoft PowerPoint &reg; presentations
+and provides two killer features:
 
-The application, written in
-[TypeScript](https://www.typescriptlang.org/), consists of a central
-[Node.js](https://nodejs.org)-based server component and a HTML5
+1. It allows a *reasonable* text formatting of the prompter content,
+   including arbitrary graphcial elements. Whatever you can put onto
+   a PowerPoint slide can be used as the individual prompter content.
+   You are no longer constrained by the limited text rendering possibilities
+   of the standard slideshow view.
+
+2. It provides a nice *analog* clock showing the done and remaining speaking time.
+   The analog type of the clock is essential as it optically does not stress the speaker
+   as much as a counting digital clock, does not require the speaker to perform any math
+   calculations during his adrenalin spikes, and especially allows the speaker
+   to get the current status with just a glance.
+
+The application, written in [TypeScript](https://www.typescriptlang.org/), consists of
+a central [Node.js](https://nodejs.org)-based server component and a HTML5
 Single-Page Application (SPA) as the client component.
 
 Overview
