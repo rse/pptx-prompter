@@ -32,8 +32,12 @@ Single-Page Application (SPA) as the client component.
 Overview
 --------
 
-The following is a screenshot of a prompter view, showing the
-title slide of a keynote presentation:
+The following is a screenshot of a prompter view corresponding to the
+title slide of a keynote presentation: On the top left is the preview
+of the current presentation content, below is the current (logical)
+slide number and the preview of the next presentation content and at the
+bottom left is an analog clock showing the done and remaining speaker
+time. On the right is the prompter content.
 
 ![screenshot](doc/screenshot.png)
 
