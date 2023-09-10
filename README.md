@@ -32,11 +32,19 @@ Single-Page Application (SPA) as the client component.
 Overview
 --------
 
-The following is a screenshot of a prompter view:
+The following is a screenshot of a prompter view, showing the
+title slide of a keynote presentation:
 
 ![screenshot](doc/screenshot.png)
 
-Here is the corresponding setup overview:
+Here is the corresponding setup overview: On the left is PowerPoint in
+its editing view, where the odd numbered slides carry the presentation
+content and the even numbered slides carry the prompter content.
+On the right top is the PowerPoint slideshow control view (usually
+visible on the notebook monitor), on the right middle is the PowerPoint
+presentation view (usually visible on the beamer) and on the right
+bottom is once again the prompter view (usually projected onto an
+external monitor, staying in front of the keynote speaker).
 
 ![overview](doc/overview.png)
 
