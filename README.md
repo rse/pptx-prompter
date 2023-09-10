@@ -110,10 +110,9 @@ Workflow
 The workflow is as following:
 
 1. Create a PowerPoint presentation with arbitrary attendee content
-   on the *odd* numbered slides 1, 3, 5, etc.
-   Create your presenter content
+   on the *odd* numbered slides 1, 3, 5, etc. Create your presenter content
    on the *even* numbered slides 2, 4, 6, etc. -- by optionally
-   using the [Presenter Canvas] background overlay, to
+   using the [Presenter Canvas](doc/presenter-canvas.svg) background overlay, to
    know where PPTX-Prompter will insert its sidebar content on the left.
 
 2. Export the PowerPoint presentation as PNG files `Slide`*N*`.png` (*N* = 1, 2, ...)
