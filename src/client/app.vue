@@ -256,7 +256,7 @@ export default defineComponent({
             this.log(level, msg)
         },
         setState (state: StateType) {
-            this.log("DEBUG", "received state: " + JSON.stringify(state))
+            /* this.log("DEBUG", "received state: " + JSON.stringify(state)) */
             const changes = StateUtil.changed(this.state, state)
             if (changes.length > 0) {
                 this.log("INFO", `state changed (${changes.length} update${changes.length > 1 ? "s" : ""})`)
