@@ -120,6 +120,21 @@ The workflow is as following:
 
 3. Run PPTX-Prompter side-by-side to PowerPoint to let it create the prompter view.
 
+Architecture
+------------
+
+**PPTX-Prompter** consists of a server and client component. The server
+component reads the pre-exported slides of the PowerPoint presentation
+from a folder and continuously polls PowerPoint for its run-time state
+(viewing mode and current slide). The client component is served by
+the server component via HTTP, renders a read-only prompter view, and
+connects via WebSocket back to the server. On every PowerPoint status
+change (usually caused by a slideview change, triggered with a keyboard
+emulating remote control device), the server component pushes new
+information to the client component via WebSocket which in turn updates
+the read-only prompter view by loading the corresponding pre-exported
+slide image files from the server component via HTTP.
+
 See Also
 --------
 
