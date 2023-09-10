@@ -24,9 +24,9 @@ embedded, hidden, even numbered, pre-exported slides. It is intended as
 a replacement (or companion) for the standard slideshow view of PowerPoint
 and provides two killer features:
 
-1. **Arbitrary Formatting**: It allows a *reasonable* text formatting of the prompter
+1. **Arbitrary Formatting**: It allows a *reasonable* text formatting of the presenter
    content, including arbitrary graphical elements. Whatever you can put onto
-   a PowerPoint slide can be used as the individual prompter content.
+   a PowerPoint slide can be used as the individual presenter content.
    You are no longer constrained by the extremely limited text rendering
    possibilities of the standard slideshow view.
 
@@ -41,28 +41,28 @@ a central [Node.js](https://nodejs.org)-based server component and a HTML5
 Single-Page Application (SPA) as the client component. The prompter view
 can be opened in a fullscreen browser like [Google Chrome](https://www.google.com/chrome) or in
 a browser source of [OBS Studio](https://obsproject.com). In the latter case, one usually also
-projects the beamer content in realtime onto the left top corner of the prompter view with the
-help of [NDI Tools](https://ndi.video/tools/) to get an even better user experience.
+projects the attendee content (on the beamer display) in realtime onto the left top corner of the prompter
+view with the help of [NDI Tools](https://ndi.video/tools/) to get an even better user experience.
 
 Overview
 --------
 
 The following is a screenshot of a prompter view corresponding to the
-title slide of a keynote presentation: On the top left is the preview
-of the current presentation content, below is the current (logical)
-slide number and the preview of the next presentation content and at the
+title attendee slide of a presentation: On the top left is the preview
+of the current attendee content, below is the current (logical)
+slide number and the preview of the next attendee content and at the
 bottom left is an analog clock showing the done and remaining speaker
-time. On the right is the prompter content.
+time. On the right is the presenter content.
 
 ![screenshot](doc/screenshot.png)
 
 Here is the corresponding setup overview: On the left is PowerPoint in
-its editing view, where the odd numbered slides carry the presentation
-content and the even numbered slides carry the prompter content.
+its editing view, where the odd numbered slides carry the attendee
+content and the even numbered slides carry the presenter content.
 On the right top is the PowerPoint slideshow control view (usually
 visible on the notebook monitor), on the right middle is the PowerPoint
-presentation view (usually visible on the beamer) and on the right
-bottom is once again the prompter view (usually projected onto an
+attendee view (usually visible on the beamer) and on the right
+bottom is once again the presenter view (usually projected onto an
 external monitor, staying in front of the keynote speaker).
 
 ![overview](doc/overview.png)
@@ -72,7 +72,7 @@ Usage (Production)
 
 - Under Windows/macOS install [Node.js](https://nodejs.org)
   for the server run-time, and [Google Chrome](https://www.google.com/chrome)
-  for the client run-time.
+  or [OBS Studio](https://obsproject.com) for the client run-time.
 
 - Run the prompter server component:<br/>
   `npx pptx-prompter [...]`
@@ -85,7 +85,7 @@ Usage (Development)
 
 - Under Windows/macOS install [Node.js](https://nodejs.org)
   for the server run-time and [Google Chrome](https://www.google.com/chrome)
-  for the client run-time,
+  or [OBS Studio](https://obsproject.com) for the client run-time,
   plus [Visual Studio Code](https://code.visualstudio.com/) with its
   TypeScript, ESLint and VueJS extensions.
 
@@ -103,6 +103,23 @@ Usage (Development)
 
 - Open the prompter client in Google Chrome:<br/>
   https://127.0.0.1:12345/
+
+Workflow
+--------
+
+The workflow is as following:
+
+1. Create a PowerPoint presentation with arbitrary attendee content
+   on the *odd* numbered slides 1, 3, 5, etc.
+   Create your presenter content
+   on the *even* numbered slides 2, 4, 6, etc. -- by optionally
+   using the [Presenter Canvas] background overlay, to
+   know where PPTX-Prompter will insert its sidebar content on the left.
+
+2. Export the PowerPoint presentation as PNG files `Slide`*N*`.png` (*N* = 1, 2, ...)
+   with resolution 1920x1090 pxiels through the regular PowerPoint export functionality.
+
+3. Run PPTX-Prompter side-by-side to PowerPoint to let it create the prompter view.
 
 See Also
 --------
