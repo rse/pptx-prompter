@@ -30,7 +30,7 @@ and provides two killer features:
    You are no longer constrained by the extremely limited text rendering
    possibilities of the standard slideshow view.
 
-2. **Analog Clock**: It provides a nice [*Analog Clock*](https://github.com/rse/analogclock), 
+2. **Analog Clock**: It provides a nice [*Analog Clock*](https://github.com/rse/analogclock),
    showing the done and remaining speaking time.
    The analog type of the clock is key, as it optically does not stress the speaker
    as much as a counting digital clock, does not require the speaker to perform any math
@@ -111,15 +111,17 @@ Workflow
 The workflow is as following:
 
 1. Create a PowerPoint presentation with arbitrary attendee content
-   on the *odd* numbered slides 1, 3, 5, etc. Create your presenter content
-   on the *even* numbered slides 2, 4, 6, etc. -- by optionally
+   on the *non-hidden*, *odd* numbered slides 1, 3, 5, etc. Create your presenter content
+   on the *hidden*, *even* numbered slides 2, 4, 6, etc. -- by optionally
    using the [Presenter Canvas](doc/presenter-canvas.svg) background overlay, to
    know where PPTX-Prompter will insert its sidebar content on the left.
 
 2. Export the PowerPoint presentation as PNG files `Slide`*N*`.png` (*N* = 1, 2, ...)
-   with resolution 1920x1090 pxiels through the regular PowerPoint export functionality.
+   with resolution 1920x1090 pixels through the regular PowerPoint export functionality.
 
 3. Run PPTX-Prompter side-by-side to PowerPoint to let it create the prompter view.
+   Use option `-d` to locate the pre-exported slides and option `-u` to control the
+   analog clock.
 
 Architecture
 ------------
