@@ -5,33 +5,30 @@
 */
 
 import * as Vite  from "vite"
-import VuePlugin  from "@vitejs/plugin-vue"
 import YAMLPlugin from "@rollup/plugin-yaml"
 
-export default Vite.defineConfig(({ command, mode, ssrBuild }) => ({
-    base: "",
-    root: "src/client",
-    assetsInclude: [ "index.yaml" ],
+export default Vite.defineConfig(({ command, mode }) => ({
+    appType: "custom",
+	base: "",
+    root: "src/server",
     plugins: [
-        VuePlugin(),
         YAMLPlugin()
     ],
-    optimizeDeps: {
-        include: [
-        ]
-    },
-    css: {
-        devSourcemap: mode === "development"
+	resolve: {
+        alias: {
+          './runtimeConfig': './runtimeConfig.browser',
+        },
     },
     build: {
-        outDir:                 "../../dst/client",
-        assetsDir:              "",
+	    sourcemap:              (mode === "development"),
+        outDir:                 "../../dst/server",
         emptyOutDir:            (mode === "production"),
-        chunkSizeWarningLimit:  6000,
+        chunkSizeWarningLimit:  5000,
         assetsInlineLimit:      0,
-        sourcemap:              (mode === "development"),
+        minify:                 (mode === "production"),
+        reportCompressedSize:   (mode === "production"),
         rollupOptions: {
-            input: "src/client/index.html",
+            input: "src/server/index.ts",
             output: {
                 entryFileNames: "[name].js",
                 chunkFileNames: "[name]-[hash:8].js",
